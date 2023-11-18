@@ -57,7 +57,7 @@ tasks.named('test') {
 }
 
 // queryDSL 추가 : QueryDSL 빌드 옵션
-def querydslDir = "$buildDir/generated/querydsl"
+def querydslDir = '$buildDir/generated/querydsl'
 
 querydsl {
 	jpa = true

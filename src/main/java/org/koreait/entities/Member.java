@@ -8,10 +8,8 @@ import lombok.NoArgsConstructor;
 import org.koreait.commons.constants.MemberType;
 
 @Entity
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@Data @Builder
+@NoArgsConstructor @AllArgsConstructor
 public class Member extends Base {
 
     @Id @GeneratedValue
