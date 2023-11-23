@@ -14,6 +14,11 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Setter
 @EntityListeners(AuditingEntityListener.class)
 public class BaseMember extends Base {
+
+    /**
+     * 기록 남김
+     */
+
     @CreatedBy
     @Column(length=65, updatable=false)
     private String createdBy;

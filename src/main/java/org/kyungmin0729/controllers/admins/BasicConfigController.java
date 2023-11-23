@@ -3,7 +3,6 @@ package org.kyungmin0729.controllers.admins;
 import lombok.RequiredArgsConstructor;
 import org.kyungmin0729.commons.configs.ConfigInfoService;
 import org.kyungmin0729.commons.configs.ConfigSaveService;
-import org.kyungmin0729.controllers.admins.dtos.ConfigForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
