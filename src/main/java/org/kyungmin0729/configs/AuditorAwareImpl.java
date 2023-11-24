@@ -10,14 +10,14 @@ import java.util.Optional;
 
 @Component
 public class AuditorAwareImpl implements AuditorAware<String> {
-
     @Override
     public Optional<String> getCurrentAuditor() {
+
         String email = null;
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if (auth != null && auth.getPrincipal() instanceof MemberInfo) {
             MemberInfo memberInfo = (MemberInfo)auth.getPrincipal();
-            email = memberInfo.getMember().getEmail();
+            email = memberInfo.getEmail();
         }
 
         return Optional.ofNullable(email);

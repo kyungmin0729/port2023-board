@@ -10,10 +10,10 @@ import lombok.Data;
 @Data
 public class Configs {
     @Id
-    @Column(name="code_", length=45)
+    @Column(length=45, name="_code")
     private String code;
 
     @Lob
-    @Column(name="value_")
+    @Column(name="_value")
     private String value;
 }
